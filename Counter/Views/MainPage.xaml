@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Counter.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Entry
+                    x:Name="InputName"
+                    Placeholder="Counter name"
+                    FontSize="20"
+                    HorizontalOptions="Center"
+                    WidthRequest="200" />
+
+            <Entry
+                    x:Name="InputNumber"
+                    Placeholder="Counter number"
+                    FontSize="20"
+                    HorizontalOptions="Center"
+                    WidthRequest="200" />
+            
+            <Button
+                    x:Name="AddCounter"
+                    Text="Add Counter"
+                    Margin="10"    
+                    WidthRequest="200"
+                    Clicked="AddCounterButton"/>
+
+            <VerticalStackLayout x:Name="CounterBox" Spacing="20" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
